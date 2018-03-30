@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", handler)
-	http.ListenAndServe("localhost:80", nil)
+	http.ListenAndServe("localhost:8080", nil)
 }
 func handler(rw http.ResponseWriter, req *http.Request) {
 	req.ParseForm()
